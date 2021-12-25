@@ -1,4 +1,4 @@
-### `Codeforces Bot` is a `Node` script that creates folder structure along with solution files with a template for a Codeforces contest.
+## `Codeforces Bot` is a `Node` script that creates folder structure along with solution files with a template for a Codeforces contest.
 
 ## Usage
 - ##### Go to your coding directory
@@ -14,6 +14,7 @@
 - ##### Install Dependencies
 ````
     cd ./codeforces-bot
+    
     yarn install
 ````
 
