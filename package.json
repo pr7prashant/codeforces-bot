@@ -1,0 +1,20 @@
+{
+  "name": "codeforces-bot",
+  "version": "1.0.0",
+  "repository": "https://github.com/pr7prashant/codeforces-bot.git",
+  "author": "Prashant Rawat",
+  "description": "Bot to generate folder structure for a Codeforces contest.",
+  "license": "MIT",
+  "keywords": [
+    "bot",
+    "codeforces",
+    "codeforces-bot",
+    "codeforces-script",
+    "competitive-programming",
+    "javascript",
+    "node"
+  ],
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
