@@ -34,9 +34,6 @@ axios.get(url)
     .then(response => {
         const { result } = response.data;
 
-        console.log('Contest : ', result.contest);
-        console.log('Problems : ', result.problems);
-
         createFiles(result.contest, result.problems);
     })
     .catch(err => {
