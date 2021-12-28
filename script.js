@@ -27,6 +27,12 @@ const createFiles = (contest, problems) => {
 
         // Copy Template File in Problem Directory and Rename as Problem Index
         fs.copyFileSync(`${contestDir}/../codeforces-bot/template.cpp`, `${problemDir}/${problem.index}.cpp`);
+
+        // Create Input File
+        fs.closeSync(fs.openSync(`${problemDir}/input.txt`, 'w'));
+
+        // Create Output File
+        fs.closeSync(fs.openSync(`${problemDir}/output.txt`, 'w'));
     });
 };
 
