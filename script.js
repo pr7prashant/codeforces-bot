@@ -6,8 +6,8 @@ const url = `https://codeforces.com/api/contest.standings?contestId=${contestId}
 
 const createFiles = (contest, problems) => {
     // Remove Special Characters from Directory Name
-    let contestName = contest.name.replace(/[^a-zA-Z ]/g, "");
-    contestName = contest.name.split(' ').join('_');
+    let contestName = contest.name.replace(/[^a-zA-Z0-9 ]/g, "");
+    contestName = contestName.split(' ').join('_');
     const contestDir = `${__dirname}/../${contestName}`;
 
     // Create Contest Directory
@@ -18,7 +18,7 @@ const createFiles = (contest, problems) => {
     // Create Directory For Each Problems
     problems.forEach(problem => {
         // Remove Special Characters from Directory Name
-        let problemName = problem.name.replace(/[^a-zA-Z ]/g, "");
+        let problemName = problem.name.replace(/[^a-zA-Z0-9 ]/g, "");
         problemName = `${problem.index}_${problemName.split(' ').join('_')}`;
         const problemDir = `${contestDir}/${problemName}`;
         
